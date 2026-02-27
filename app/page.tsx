@@ -96,7 +96,4 @@ export default function App() {
       ))}
     </div>
   );
-}npm run dev
-Local: http://localhost:3000
-cd tareas-hospital
-tareas-hospital>
+}
