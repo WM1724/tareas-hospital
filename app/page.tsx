@@ -46,7 +46,7 @@ const [tasks, setTasks] = useState<Task[]>([]);
     setTaskInput("");
   };
 
-  const toggleStatus = (id) => {
+ const toggleStatus = (id: number) => {
     setTasks(
       tasks.map((task) =>
         task.id === id
@@ -56,7 +56,7 @@ const [tasks, setTasks] = useState<Task[]>([]);
     );
   };
 
-  const deleteTask = (id) => {
+  const deleteTask = (id: number) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
