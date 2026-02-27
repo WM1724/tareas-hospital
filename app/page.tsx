@@ -6,7 +6,15 @@ export default function App() {
   const [dateTime, setDateTime] = useState("");
   const [taskInput, setTaskInput] = useState("");
   const [category, setCategory] = useState("guardia");
-  const [tasks, setTasks] = useState([]);
+type Task = {
+  id: number;
+  dateTime: string;
+  text: string;
+  category: string;
+  status: string;
+};
+
+const [tasks, setTasks] = useState<Task[]>([]);
 
   useEffect(() => {
     const saved = localStorage.getItem("tareasHospital");
